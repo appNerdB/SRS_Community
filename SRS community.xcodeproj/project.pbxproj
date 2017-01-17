@@ -14,6 +14,10 @@
 		8F1152BA1E2E14190013B347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1152B91E2E14190013B347 /* Assets.xcassets */; };
 		8F1152BD1E2E14190013B347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1152BB1E2E14190013B347 /* LaunchScreen.storyboard */; };
 		8F1152C51E2E14C70013B347 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F1152C41E2E14C70013B347 /* GoogleService-Info.plist */; };
+		8F1152CA1E2E23EC0013B347 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1152C91E2E23EC0013B347 /* CustomView.swift */; };
+		8F1152CD1E2E24760013B347 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1152CC1E2E24760013B347 /* Constants.swift */; };
+		8F1152CF1E2E25DA0013B347 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1152CE1E2E25DA0013B347 /* CustomButton.swift */; };
+		8F1152D11E2E27B60013B347 /* customTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1152D01E2E27B60013B347 /* customTF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		8F1152BC1E2E14190013B347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F1152BE1E2E14190013B347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1152C41E2E14C70013B347 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F1152C91E2E23EC0013B347 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		8F1152CC1E2E24760013B347 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8F1152CE1E2E25DA0013B347 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8F1152D01E2E27B60013B347 /* customTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTF.swift; sourceTree = "<group>"; };
 		DD680D5547FD8B415EB45257 /* Pods-SRS community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRS community.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRS community/Pods-SRS community.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +79,7 @@
 		8F1152B11E2E14190013B347 /* SRS community */ = {
 			isa = PBXGroup;
 			children = (
+				8F1152CB1E2E24670013B347 /* Util */,
 				8F1152C81E2E16E70013B347 /* Controller */,
 				8F1152C71E2E16E20013B347 /* View */,
 				8F1152C61E2E16D90013B347 /* Model */,
@@ -94,6 +103,9 @@
 		8F1152C71E2E16E20013B347 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8F1152C91E2E23EC0013B347 /* CustomView.swift */,
+				8F1152CE1E2E25DA0013B347 /* CustomButton.swift */,
+				8F1152D01E2E27B60013B347 /* customTF.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -104,6 +116,14 @@
 				8F1152B41E2E14190013B347 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		8F1152CB1E2E24670013B347 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8F1152CC1E2E24760013B347 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		CF66C3042039DFCD5ADD3818 /* Pods */ = {
@@ -240,8 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1152CA1E2E23EC0013B347 /* CustomView.swift in Sources */,
 				8F1152B51E2E14190013B347 /* SignInVC.swift in Sources */,
 				8F1152B31E2E14190013B347 /* AppDelegate.swift in Sources */,
+				8F1152CD1E2E24760013B347 /* Constants.swift in Sources */,
+				8F1152D11E2E27B60013B347 /* customTF.swift in Sources */,
+				8F1152CF1E2E25DA0013B347 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
