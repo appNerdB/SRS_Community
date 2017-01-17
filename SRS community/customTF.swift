@@ -15,6 +15,7 @@ class customTF: UITextField {
         
         layer.borderColor = SHADOW_COLOR
         layer.borderWidth = 1.0
+        layer.backgroundColor = UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0).cgColor
         
     }
     

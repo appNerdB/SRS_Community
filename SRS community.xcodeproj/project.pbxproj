@@ -35,6 +35,7 @@
 		8F1152CC1E2E24760013B347 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F1152CE1E2E25DA0013B347 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8F1152D01E2E27B60013B347 /* customTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTF.swift; sourceTree = "<group>"; };
+		8F1152D21E2E35D00013B347 /* SRS community.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SRS community.entitlements"; sourceTree = "<group>"; };
 		DD680D5547FD8B415EB45257 /* Pods-SRS community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRS community.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRS community/Pods-SRS community.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +80,7 @@
 		8F1152B11E2E14190013B347 /* SRS community */ = {
 			isa = PBXGroup;
 			children = (
+				8F1152D21E2E35D00013B347 /* SRS community.entitlements */,
 				8F1152CB1E2E24670013B347 /* Util */,
 				8F1152C81E2E16E70013B347 /* Controller */,
 				8F1152C71E2E16E20013B347 /* View */,
@@ -172,6 +174,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 62243R676H;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -389,6 +396,7 @@
 			baseConfigurationReference = 0FF998D5B3ED0B975D9EAA58 /* Pods-SRS community.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SRS community/SRS community.entitlements";
 				DEVELOPMENT_TEAM = 62243R676H;
 				INFOPLIST_FILE = "SRS community/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +411,7 @@
 			baseConfigurationReference = DD680D5547FD8B415EB45257 /* Pods-SRS community.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SRS community/SRS community.entitlements";
 				DEVELOPMENT_TEAM = 62243R676H;
 				INFOPLIST_FILE = "SRS community/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
